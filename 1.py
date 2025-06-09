@@ -12,7 +12,7 @@ def sentinel_to_rgb(data):
 
     # 统一数据形状为 (H, W, 5)
     if data.shape[0] == 5:
-        data = np.moveaxis(data, 0, -1)  # 从 (5, H, W) -> (H, W, 5)
+        data = np.moveaxis(data, 0, -1)  # 从 (5, H, W) -> (H, W, 5
 
     # 线性压缩到0-255范围
     data = (data / 10000.0) * 255.0
